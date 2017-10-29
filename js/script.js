@@ -32,6 +32,7 @@ function myFunction(e) {
 	if ((Math.abs(old-param) > .1 || Math.abs(old2 - d) > 0.1) && document.getElementById("tree").checked) {
 	    ctx.clearRect(0, 0, canvas.width, canvas.height);
 	    ctx.beginPath();
+	    console.log(param);
 	    drawTree(canvas.width/2.5, canvas.height-100, -90, depth, param, 6*d);
 	    ctx.closePath();
 	    ctx.stroke();
